@@ -11,5 +11,10 @@ public class Dolar implements Moneda{
 	public double getFactorConversion() {
 		return 0.0011;
 	}
+	@Override
+	public double convertir(double cantidadClP) {
+		// TODO Auto-generated method stub
+		return getFactorConversion()*cantidadClP;
+	}
 
 }

@@ -5,13 +5,16 @@ public class Runner {
 		
 		Dolar monedaDolar= new Dolar();
 		Euro monedaEuro= new Euro();
+		Rupia monedaRupiaNepali= new Rupia();
 		
 		
 		double pesoChileno=10000;
-		double dolares=monedaDolar.getFactorConversion()*pesoChileno;
-		double euros=monedaEuro.getFactorConversion()*pesoChileno; 
-		System.out.print(monedaDolar.getSimbolo()+" "+dolares );
-		System.out.print(monedaEuro.getSimbolo()+" "+euros );
+		double dolares=monedaDolar.convertir(pesoChileno);
+		double euros=monedaEuro.convertir(pesoChileno); 
+		double rupias= monedaRupiaNepali.convertir(pesoChileno);
+		System.out.println(monedaDolar.getSimbolo()+" "+dolares );
+		System.out.println(monedaEuro.getSimbolo()+" "+euros );
+		System.out.println(monedaRupiaNepali.getSimbolo()+" "+rupias );
 		
 	}
 }

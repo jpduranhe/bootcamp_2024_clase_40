@@ -12,4 +12,10 @@ public class Euro implements Moneda {
 		return 0.00098;
 	}
 
+	@Override
+	public double convertir(double cantidadClP) {
+		return getFactorConversion()*cantidadClP;
+	}
+	
+
 }
