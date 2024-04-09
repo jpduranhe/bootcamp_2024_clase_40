@@ -1,5 +1,14 @@
-Creando Interfaces: Vamos a modificar el proyecto BilleteraVirtual para hacer uso de las interfaces.
-Crear una interfaz Moneda con los métodos getSimbolo() y getFactorConversion().
+Creando Interfaces: Vamos a modificar el proyecto BilleteraVirtual 
+para hacer uso de las interfaces.
+1) Crear una interfaz Moneda con los métodos 
+getSimbolo() y 
+getFactorConversion().
+
+
 Crear una clase Dolar que implemente la interfaz Moneda.
 Crear una clase Euro que implemente la interfaz Moneda.
-Crear un método convertir() para la interfaz Moneda que permita convertir fondos de una moneda a otra.
+
+Crear un método convertir() 
+para la interfaz 
+Moneda que permita convertir 
+fondos de una moneda a otra.
