@@ -4,20 +4,19 @@ public class Runner {
 
 	public static void main(String[] args) {
 		
-		ImpresoraEpson objImpresoraEpson= new ImpresoraEpson();
+		ImpresoraEpson  objImpresoraEpson  = new ImpresoraEpson();
 		ImpresoraCannon objImpresoraCannon = new ImpresoraCannon();
+		Animal objeAnimal= new Animal();
 		
-		
-		
-		objImpresoraEpson.imprimir();
-		objImpresoraCannon.imprimir();
-		
-		
-		String texto=objImpresoraCannon.printInject("Hola");
-		System.out.println(texto);
-		
-		
-		objImpresoraEpson.printDotMatrix();
+		procesarImpresion(objImpresoraEpson);
+		procesarImpresion(objImpresoraCannon);
+		procesarImpresion(objeAnimal);
+	}
+	
+	
+	
+	public static void procesarImpresion(Imprimir impresion ) {
+		impresion.imprimir();
 	}
 
 }
